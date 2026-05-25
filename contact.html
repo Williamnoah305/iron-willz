@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - IRON WILLZ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>IRON WILLZ</h1>
+                <p class="motto">Crafted with Passion, Forged with Steel</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="upload.html">Upload</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p class="section-subtitle">We'd love to hear from you</p>
+
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h3>Send us a Message</h3>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" placeholder="Your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" placeholder="your@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" placeholder="What is this about?" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" placeholder="Tell us more..." rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@ironwillz.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Creative Studios, Global</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Response Time</h4>
+                            <p>Within 24-48 hours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h3>Frequently Asked Questions</h3>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h4 class="faq-question">
+                            <span>How do I upload my artwork?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </h4>
+                        <p class="faq-answer">Go to the Upload page, drag & drop your files or browse to select them. Fill in the title, description, category, and tags, then click 'Upload Now'. Your work will appear in the gallery immediately!</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4 class="faq-question">
+                            <span>What file formats are supported?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </h4>
+                        <p class="faq-answer">We support PNG, JPG, GIF, SVG for images; WAV, MP3, FLAC, OGG for audio; and MP4, MOV, AVI, WebM for videos. Maximum file size is 500MB per upload.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4 class="faq-question">
+                            <span>Is IRON WILLZ free to use?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </h4>
+                        <p class="faq-answer">Yes! IRON WILLZ is completely free to use with no hidden fees, subscriptions, or limitations. Upload as much as you want!</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4 class="faq-question">
+                            <span>Can I delete my uploads?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </h4>
+                        <p class="faq-answer">Yes, you can delete any of your uploads from the Recent Uploads section on the Upload page. Simply click the delete button next to the item.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4 class="faq-question">
+                            <span>Where are my files stored?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </h4>
+                        <p class="faq-answer">Your files are stored in your browser's local storage. They remain on your device and are accessible whenever you open IRON WILLZ.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4 class="faq-question">
+                            <span>How can I filter content in the gallery?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </h4>
+                        <p class="faq-answer">Visit the Gallery page and use the filter buttons to view All content, Images only, Music only, or Videos only. You can also search using tags.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>IRON WILLZ</h4>
+                    <p>Crafted with Passion, Forged with Steel</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="upload.html">Upload</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 IRON WILLZ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

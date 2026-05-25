@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload - IRON WILLZ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>IRON WILLZ</h1>
+                <p class="motto">Crafted with Passion, Forged with Steel</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="upload.html" class="active">Upload</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Upload Section -->
+    <section class="upload-section">
+        <div class="container">
+            <h2>Upload Your Artwork</h2>
+            <p class="section-subtitle">Share your creative vision with the world</p>
+            
+            <div class="upload-container">
+                <!-- Upload Form -->
+                <div class="upload-form-wrapper">
+                    <h3>Share Your Work</h3>
+                    
+                    <!-- Drop Zone -->
+                    <div class="drop-zone" id="drop-zone">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Drag & Drop your files here</p>
+                        <p class="or">OR</p>
+                        <button type="button" class="btn btn-primary" id="browse-btn">Browse Files</button>
+                        <input type="file" id="file-input" multiple accept="image/*,audio/*,video/*" style="display:none;">
+                    </div>
+
+                    <!-- File Preview -->
+                    <div id="file-preview" class="file-preview" style="display:none;">
+                        <h4>Selected File:</h4>
+                        <div id="preview-content"></div>
+                    </div>
+
+                    <!-- Upload Form -->
+                    <form id="upload-form" class="upload-form">
+                        <div class="form-group">
+                            <label for="title">Title *</label>
+                            <input type="text" id="title" placeholder="Name of your artwork" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea id="description" placeholder="Tell us about your work" rows="4"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="category">Category *</label>
+                            <select id="category" required>
+                                <option value="">Select a category</option>
+                                <option value="images">Art & Design</option>
+                                <option value="music">Music</option>
+                                <option value="videos">Videos</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tags">Tags</label>
+                            <input type="text" id="tags" placeholder="Comma-separated keywords">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox">
+                                <input type="checkbox" id="terms" required>
+                                I agree to the terms and conditions
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">Upload Now</button>
+                    </form>
+
+                    <!-- Guidelines -->
+                    <div class="guidelines">
+                        <h4>Upload Guidelines</h4>
+                        <ul>
+                            <li><strong>Supported Formats:</strong> PNG, JPG, GIF, SVG, WAV, MP3, MP4, MOV, AVI, WebM</li>
+                            <li><strong>Max File Size:</strong> 500MB per file</li>
+                            <li><strong>Recommended:</strong> Use descriptive titles and tags for better discoverability</li>
+                            <li><strong>Quality:</strong> Higher quality files recommended</li>
+                            <li><strong>Copyright:</strong> Ensure you have rights to upload this content</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Recent Uploads -->
+                <div class="recent-uploads-wrapper">
+                    <h3>Your Recent Uploads</h3>
+                    <div id="recent-uploads" class="recent-uploads">
+                        <p>No uploads yet. Start by uploading your first artwork!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>IRON WILLZ</h4>
+                    <p>Crafted with Passion, Forged with Steel</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="upload.html">Upload</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 IRON WILLZ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
