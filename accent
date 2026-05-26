@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Accent Utilities — Examples</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="example-page">
+  <h1>Accent Utilities — Quick Examples</h1>
+
+  <section class="example-section">
+    <h2>Badges & Inline</h2>
+    <p>
+      <span class="badge-accent">Featured</span>
+      <span class="accent-orange inline-space">New release</span>
+    </p>
+
+    <p class="example-paragraph">
+      <span class="color-dot dot-green"></span>
+      <strong>Live:</strong> <span class="accent-green">Streams online</span>
+    </p>
+  </section>
+
+  <section class="example-section">
+    <h2>Buttons</h2>
+    <p>
+      <a class="cta-btn" href="#">Primary CTA</a>
+      <button class="submit-btn inline-space">Submit (form)</button>
+    </p>
+  </section>
+
+  <section class="example-section">
+    <h2>Text Accents</h2>
+    <p><span class="accent-purple">Purple text</span> • <span class="accent-blue">Blue text</span> • <span class="accent-orange">Orange text</span></p>
+  </section>
+
+  <section class="example-section">
+    <h2>Background Accent</h2>
+    <div class="bg-accent-green example-box">Green background with white text</div>
+  </section>
+
+  <section class="example-section">
+    <h2>Gallery / Date Example</h2>
+    <div class="example-card">
+      <div class="example-card-title">Artwork Title</div>
+      <div class="gallery-item-date example-paragraph">Apr 2026</div>
+    </div>
+  </section>
+
+  <section class="example-section">
+    <h2>Integration Link Example</h2>
+    <a class="integration-link" href="#">Connect account</a>
+  </section>
+
+  <footer class="example-footer">
+    Try these utilities in your markup — adjust classes as needed.
+  </footer>
+</body>
+</html>
